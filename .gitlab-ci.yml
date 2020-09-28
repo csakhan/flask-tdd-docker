@@ -37,4 +37,4 @@ test:
     - pytest "project/tests" -p no:warnings
     - flake8 project
     - black project --check
-    - isort project/**/*.py --check-only
+    #- isort project/**/*.py --check-only
