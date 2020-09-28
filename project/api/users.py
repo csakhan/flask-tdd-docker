@@ -12,7 +12,6 @@ api = Api(users_blueprint)
 user = api.model(
     "User",
     {
-        #'id': fields.Integer(readOnly=True),
         "username": fields.String(required=True),
         "email": fields.String(required=True),
         "created_date": fields.DateTime,

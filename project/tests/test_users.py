@@ -18,7 +18,7 @@ def test_add_user_duplicate_email(test_app, test_database):
     client = test_app.test_client()
     client.post(
         "/users",
-        data=json.dumps({"username": "shuaib", "email": "sshuaibb@gmail.com",}),
+        data=json.dumps({"username": "shuaib", "email": "sshuaibb@gmail.com"}),
         content_type="application/json",
     )
     resp = client.post(
