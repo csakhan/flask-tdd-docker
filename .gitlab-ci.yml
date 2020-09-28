@@ -40,7 +40,7 @@ test:
     - black project --check
     #- isort project/**/*.py --check-only
   
- deploy:
+deploy:
   stage: deploy
   services:
     - docker:dind
